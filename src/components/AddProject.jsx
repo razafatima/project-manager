@@ -5,7 +5,7 @@ import Modal from "./Modal.jsx";
 
 export default function AddProject({onAdd, onCancel}){
     const modal = useRef();
-    {/*ref is used to connect to HTML elements*/}
+    
     const title = useRef();
     const description = useRef();
     const dueDate = useRef();
@@ -19,12 +19,12 @@ export default function AddProject({onAdd, onCancel}){
          enteredDescription.trim() === ''||
           enteredDuedate.trim() === ''
         ){
-            {/*show the error model*/}
+           
             modal.current.open();
             return;
         }
 
-        {/*validation*/}
+        
      onAdd({
         title: enteredTitle,
         description: enteredDescription,
