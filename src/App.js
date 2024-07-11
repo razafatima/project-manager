@@ -6,7 +6,7 @@ import ProjectSidebar from './components/ProjectSidebar.jsx';
 import SelectedTask from './components/SelectedTask.jsx';
 function App() {
 
- 
+  
   const [projectstate, setProjectState] = useState({
   selectedProjectId: undefined,
   projects:[],
